@@ -1,5 +1,5 @@
 {% set name = "emptylog" %}
-{% set version = "0.0.6" %}
+{% set version = "0.0.7" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emptylog-{{ version }}.tar.gz
-  sha256: 884797256944ffe08ad394ee9d269d0cbe1d0184832619630053330f4cdc67f1
+  sha256: 5e5e3bdd1d93f94375b376cc1fd4b45ae46e18a7edff26cc0d92e6b093a4f3bc
 
 build:
   noarch: python
