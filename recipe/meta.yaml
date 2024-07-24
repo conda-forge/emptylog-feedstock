@@ -22,7 +22,7 @@ requirements:
   run:
     - python >=3.7
     - typing-extensions
-    - printo >=0.0.2
+    - printo >=0.0.4
 
 test:
   imports:
