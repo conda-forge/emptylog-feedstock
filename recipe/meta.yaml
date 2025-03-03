@@ -1,5 +1,5 @@
 {% set name = "emptylog" %}
-{% set version = "0.0.8" %}
+{% set version = "0.0.9" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/emptylog-{{ version }}.tar.gz
-  sha256: fc60879c2e954e22e87dd3bdfef0ca833871873f2584d9fc03332a7cee32ada9
+  sha256: a6af238179b8e78ed7e5e97f548d0ef8b36f449027a71ffab1cf592259129b05
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -22,7 +22,7 @@ requirements:
   run:
     - python >={{ python_min }}
     - typing-extensions
-    - printo >=0.0.4
+    - printo >=0.0.5
 
 test:
   imports:
