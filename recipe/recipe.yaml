@@ -24,14 +24,16 @@ requirements:
     - pip
   run:
     - python >=${{ python_min }}
-    - printo >=0.0.8
+    - printo >=0.0.22
 
 tests:
   - python:
       imports:
         - emptylog
       pip_check: true
-      python_version: ${{ python_min }}.*
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
 
 about:
   summary: Mimicking the logger protocol
